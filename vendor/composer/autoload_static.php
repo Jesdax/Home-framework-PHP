@@ -24,6 +24,10 @@ class ComposerStaticInit3aba0f8a5477a7db6d548f152293f58d
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
+        'F' => 
+        array (
+            'Framework\\' => 10,
+        ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
@@ -45,6 +49,10 @@ class ComposerStaticInit3aba0f8a5477a7db6d548f152293f58d
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Framework\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Framework',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
