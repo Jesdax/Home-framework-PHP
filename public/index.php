@@ -6,4 +6,4 @@ $app = new \Framework\App();
 
 
 
-$app->run();
+$response = $app->run(\GuzzleHttp\Psr7\ServerRequest::fromGlobals());
