@@ -1,0 +1,14 @@
+{
+    "name": "augustin/home-framework",
+    "description": "Framework maison",
+    "authors": [
+        {
+            "name": "augustin",
+            "email": "augustin_kave_08@outlook.fr"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.1"
+    }
+}
