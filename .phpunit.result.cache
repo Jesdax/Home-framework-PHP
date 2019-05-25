@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":298:{a:2:{s:7:"defects";a:2:{s:33:"Tests\Framework\AppTest::testBlog";i:6;s:37:"Tests\Framework\AppTest::testError404";i:6;}s:5:"times";a:3:{s:50:"Tests\Framework\AppTest::testRedirectTrailingSlash";d:0.003;s:33:"Tests\Framework\AppTest::testBlog";d:0;s:37:"Tests\Framework\AppTest::testError404";d:0;}}}
