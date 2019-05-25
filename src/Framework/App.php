@@ -2,17 +2,21 @@
 
 namespace Framework;
 
-
 use GuzzleHttp\Psr7\Response;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
-class App {
+class App
+{
 
-
-    public function run(ServerRequestInterface $request): ResponseInterface {
-
+    /**
+     * @param ServerRequestInterface $request
+     * @return \GuzzleHttp\Psr7\MessageTrait|Response
+     */
+    public function run(ServerRequestInterface $request)
+    {
         $uri = $request->getUri()->getPath();
+
         if (!empty($uri) && $uri[-1] === "/") { //If url is not empty && last caract. in url equal "/" so pblm
             return (new Response())
                 ->withStatus(301)
@@ -23,9 +27,4 @@ class App {
         }
         return $response = new Response(404, [], '<h1>Error 404</h1>');
     }
-
-
 }
-
-
-
