@@ -2,7 +2,9 @@
 require '../vendor/autoload.php';
 
 
-$app = new \Framework\App();
+$app = new \Framework\App([
+    \App\Blog\BlogModule::class
+]);
 
 
 

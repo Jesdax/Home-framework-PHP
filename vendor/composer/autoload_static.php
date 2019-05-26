@@ -11,6 +11,7 @@ class ComposerStaticInit3aba0f8a5477a7db6d548f152293f58d
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '6f2c5977e422114bbaec553e7c77ee8b' => __DIR__ . '/..' . '/http-interop/response-sender/src/functions.php',
     );
 
@@ -19,9 +20,17 @@ class ComposerStaticInit3aba0f8a5477a7db6d548f152293f58d
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'Z' => 
+        array (
+            'Zend\\Expressive\\Router\\' => 23,
+        ),
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
+        ),
+        'T' => 
+        array (
+            'Tests\\' => 6,
         ),
         'S' => 
         array (
@@ -38,11 +47,17 @@ class ComposerStaticInit3aba0f8a5477a7db6d548f152293f58d
         'F' => 
         array (
             'Framework\\' => 10,
+            'Fig\\Http\\Message\\' => 17,
+            'FastRoute\\' => 10,
         ),
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
         ),
     );
 
@@ -53,9 +68,18 @@ class ComposerStaticInit3aba0f8a5477a7db6d548f152293f58d
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
+        'Zend\\Expressive\\Router\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-expressive-fastroute/src',
+            1 => __DIR__ . '/..' . '/zendframework/zend-expressive-router/src',
+        ),
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
         ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
@@ -73,6 +97,14 @@ class ComposerStaticInit3aba0f8a5477a7db6d548f152293f58d
         array (
             0 => __DIR__ . '/../..' . '/src/Framework',
         ),
+        'Fig\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fig/http-message-util/src',
+        ),
+        'FastRoute\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -80,6 +112,10 @@ class ComposerStaticInit3aba0f8a5477a7db6d548f152293f58d
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
