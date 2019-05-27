@@ -15,7 +15,7 @@ class PHPRenderer implements RendererInterface
     private $globals = [];
 
 
-    public function __construct(?string $defaultPath = null)
+    public function __construct($defaultPath = null)
     {
         if (!is_null($defaultPath)) {
             $this->addPath($defaultPath);
