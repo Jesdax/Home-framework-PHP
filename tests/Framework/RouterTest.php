@@ -60,4 +60,17 @@ class RouterTest extends TestCase
         $this->assertEquals('/blog/mon-article-18', $uri);
     }
 
+    public function testGenerateUriWithQueryParams() {
+        $request = new ServerRequest('GET', '/blog/mon-slug-8');
+        $this->router->get('/blog', function () { return 'azeaze'; }, 'posts');
+        $this->router->get('/blog/{slug:[a-z0-9\-]+}-{id:\d+}', function () { return 'hello'; }, 'post.show');
+
+        $uri = $this->router->generateUri(
+            'post.show',
+            ['slug' => 'mon-article', 'id' => 18],
+            ['p' => 2]
+        );
+        $this->assertEquals('/blog/mon-article-18?p=2', $uri);
+    }
+
 }

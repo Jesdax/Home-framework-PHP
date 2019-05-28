@@ -42,7 +42,7 @@ class PaginatedQuery implements AdapterInterface
      */
     public function getNbResults()
     {
-        return $this->pdo->query($this->countQuery->fetchColumn());
+        return $this->pdo->query($this->countQuery)->fetchColumn();
     }
 
     /**
@@ -52,8 +52,10 @@ class PaginatedQuery implements AdapterInterface
      */
     public function getSlice($offset, $length)
     {
-        $statement = $this->pdo->prepare($this->query, 'LIMIT ?, ?');
-        $statement->execute($offset, $length);
+        $statement = $this->pdo->prepare($this->query . ' LIMIT :offset, :length');
+        $statement->bindParam('offset', $offset, \PDO::PARAM_INT);
+        $statement->bindParam('length', $length, \PDO::PARAM_INT);
+        $statement->execute();
         return $statement->fetchAll();
     }
 }

@@ -3,6 +3,8 @@ namespace App\Blog\Table;
 
 
 use Framework\Database\PaginatedQuery;
+use Pagerfanta\Adapter\AdapterInterface;
+use Pagerfanta\Pagerfanta;
 
 class PostTable
 {
@@ -20,16 +22,20 @@ class PostTable
     }
 
     /**
+     * @param int $perPage
+     * @return Pagerfanta
      * Pagines articles
-     * @return PaginatedQuery
      */
-    public function findPaginated(): PaginatedQuery
+    public function findPaginated($perPage, int $currentPage)
     {
-        return new PaginatedQuery(
+        $query = new PaginatedQuery(
             $this->pdo,
             'SELECT * FROM posts',
             'SELECT COUNT(id) FROM posts'
         );
+        return (new Pagerfanta($query))
+            ->setMaxPerPage($perPage)
+            ->setCurrentPage($currentPage);
     }
 
 
