@@ -3,6 +3,7 @@ use Framework\Renderer;
 use Framework\Renderer\TwigRendererFactory;
 use Framework\Router\RouterTwigExtension;
 use Framework\Twig\PagerFantaExtension;
+use Framework\Twig\TextExtension;
 
 return [
     'database.host' => 'localhost',
@@ -12,7 +13,8 @@ return [
     'views.path' => dirname(__DIR__) . '/views',
     'twig.extensions' => [
         \DI\get(RouterTwigExtension::class),
-        \DI\get(PagerFantaExtension::class)
+        \DI\get(PagerFantaExtension::class),
+        \DI\get(TextExtension::class)
     ],
     \Framework\Router::class => \DI\autowire(),
 Renderer\RendererInterface::class => \DI\factory(TwigRendererFactory::class),
