@@ -61,6 +61,7 @@ class ComposerStaticInit3aba0f8a5477a7db6d548f152293f58d
             'PhpParser\\' => 10,
             'PhpDocReader\\' => 13,
             'Phinx\\' => 6,
+            'Pagerfanta\\' => 11,
         ),
         'I' => 
         array (
@@ -190,6 +191,10 @@ class ComposerStaticInit3aba0f8a5477a7db6d548f152293f58d
         'Phinx\\' => 
         array (
             0 => __DIR__ . '/..' . '/robmorgan/phinx/src/Phinx',
+        ),
+        'Pagerfanta\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pagerfanta/pagerfanta/src/Pagerfanta',
         ),
         'Invoker\\' => 
         array (
