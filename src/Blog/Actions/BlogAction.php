@@ -69,6 +69,7 @@ class BlogAction
                 'id' => $post->id
             ]);
         }
+        //var_dump($post);
         return $this->renderer->render('@blog/show', [
             'post' => $post
         ]);

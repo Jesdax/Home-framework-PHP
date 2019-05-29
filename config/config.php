@@ -14,7 +14,8 @@ return [
     'twig.extensions' => [
         \DI\get(RouterTwigExtension::class),
         \DI\get(PagerFantaExtension::class),
-        \DI\get(TextExtension::class)
+        \DI\get(TextExtension::class),
+        \DI\get(\Framework\Twig\TimeExtension::class)
     ],
     \Framework\Router::class => \DI\autowire(),
 Renderer\RendererInterface::class => \DI\factory(TwigRendererFactory::class),
