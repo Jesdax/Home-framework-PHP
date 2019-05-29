@@ -45,14 +45,14 @@ class PostTable
     /**
      * Get an article from his id
      * @param $id
-     * @return Post
+     * @return Post|null
      */
-    public function find($id): Post
+    public function find($id): ?Post
     {
         $query = $this->pdo
             ->prepare('SELECT * FROM posts WHERE id = ?');
         $query->execute([$id]);
         $query->setFetchMode(\PDO::FETCH_CLASS, Post::class);
-        return $query->fetch();
+        return $query->fetch() ?: null;
     }
 }

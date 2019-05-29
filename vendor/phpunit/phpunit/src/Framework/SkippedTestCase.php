@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 /*
  * This file is part of PHPUnit.
  *
@@ -10,10 +10,15 @@
 namespace PHPUnit\Framework;
 
 /**
- * @internal This class is not covered by the backward compatibility promise for PHPUnit
+ * A skipped test case
  */
-final class SkippedTestCase extends TestCase
+class SkippedTestCase extends TestCase
 {
+    /**
+     * @var string
+     */
+    protected $message = '';
+
     /**
      * @var bool
      */
@@ -35,23 +40,31 @@ final class SkippedTestCase extends TestCase
     protected $useErrorHandler = false;
 
     /**
-     * @var string
-     */
-    private $message = '';
-
-    /**
      * @var bool
      */
-    private $useOutputBuffering = false;
+    protected $useOutputBuffering = false;
 
-    public function __construct(string $className, string $methodName, string $message = '')
+    /**
+     * @param string $message
+     */
+    public function __construct($className, $methodName, $message = '')
     {
-        parent::__construct($className . '::' . $methodName);
-
         $this->message = $message;
+        parent::__construct($className . '::' . $methodName);
     }
 
-    public function getMessage(): string
+    /**
+     * @throws Exception
+     */
+    protected function runTest()
+    {
+        $this->markTestSkipped($this->message);
+    }
+
+    /**
+     * @return string
+     */
+    public function getMessage()
     {
         return $this->message;
     }
@@ -59,18 +72,10 @@ final class SkippedTestCase extends TestCase
     /**
      * Returns a string representation of the test case.
      *
-     * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
+     * @return string
      */
-    public function toString(): string
+    public function toString()
     {
         return $this->getName();
-    }
-
-    /**
-     * @throws Exception
-     */
-    protected function runTest(): void
-    {
-        $this->markTestSkipped($this->message);
     }
 }

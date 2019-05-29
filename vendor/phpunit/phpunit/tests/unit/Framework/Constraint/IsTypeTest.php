@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 /*
  * This file is part of PHPUnit.
  *
@@ -7,18 +7,16 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace PHPUnit\Framework\Constraint;
 
 use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestFailure;
 
-/**
- * @small
- */
-final class IsTypeTest extends ConstraintTestCase
+class IsTypeTest extends ConstraintTestCase
 {
-    public function testConstraintIsType(): void
+    public function testConstraintIsType()
     {
         $constraint = Assert::isType('string');
 
@@ -45,7 +43,7 @@ EOF
         $this->fail();
     }
 
-    public function testConstraintIsType2(): void
+    public function testConstraintIsType2()
     {
         $constraint = Assert::isType('string');
 
@@ -71,7 +69,7 @@ EOF
     /**
      * @dataProvider resources
      */
-    public function testConstraintIsResourceTypeEvaluatesCorrectlyWithResources($resource): void
+    public function testConstraintIsResourceTypeEvaluatesCorrectlyWithResources($resource)
     {
         $constraint = Assert::isType('resource');
 
@@ -89,15 +87,6 @@ EOF
             'open resource'     => [\fopen(__FILE__, 'r')],
             'closed resource'   => [$fh],
         ];
-    }
-
-    public function testIterableTypeIsSupported(): void
-    {
-        $constraint = Assert::isType('iterable');
-
-        $this->assertFalse($constraint->evaluate('', '', true));
-        $this->assertTrue($constraint->evaluate([], '', true));
-        $this->assertEquals('is of type "iterable"', $constraint->toString());
     }
 
     /**

@@ -1,7 +1,8 @@
 --TEST--
 GH-503: assertEquals() Line Ending Differences Are Obscure
 --FILE--
-<?php declare(strict_types=1);
+<?php
+
 $_SERVER['argv'][1] = '--no-configuration';
 $_SERVER['argv'][2] = 'Issue503Test';
 $_SERVER['argv'][3] = __DIR__ . '/503/Issue503Test.php';
@@ -26,7 +27,6 @@ Failed asserting that two strings are identical.
  #Warning: Strings contain different line endings!
 -'foo
 +'foo
- '
 
 %s:%i
 

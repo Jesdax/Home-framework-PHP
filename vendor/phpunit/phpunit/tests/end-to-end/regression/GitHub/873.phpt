@@ -7,7 +7,7 @@ if (PHP_MAJOR_VERSION < 7) {
 }
 ?>
 --FILE--
-<?php declare(strict_types=1);
+<?php
 $_SERVER['argv'][1] = '--no-configuration';
 $_SERVER['argv'][2] = 'Issue873Test';
 $_SERVER['argv'][3] = __DIR__ . '/873/Issue873Test.php';
@@ -16,6 +16,7 @@ require __DIR__ . '/../../../bootstrap.php';
 PHPUnit\TextUI\Command::main();
 ?>
 --EXPECTF--
-%AException: PHPUnit suppresses exceptions thrown outside of test case function in %s:%i
+
+Fatal error: Uncaught Exception: PHPUnit suppresses exceptions thrown outside of test case function in %s:%i
 Stack trace:
 %a

@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 /*
  * This file is part of PHPUnit.
  *
@@ -13,12 +13,9 @@ use PHPUnit\Framework\Constraint\Constraint;
 use PHPUnit\Framework\Constraint\LogicalXor;
 use PHPUnit\Framework\TestCase;
 
-/**
- * @small
- */
 final class LogicalXorTest extends TestCase
 {
-    public function testFromConstraintsReturnsConstraint(): void
+    public function testFromConstraintsReturnsConstraint()
     {
         $other = 'Foo';
         $count = 5;

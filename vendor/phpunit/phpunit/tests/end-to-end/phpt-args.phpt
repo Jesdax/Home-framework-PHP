@@ -3,9 +3,9 @@ PHPT runner supports ARGS section
 --ARGS--
 help
 --FILE--
-<?php declare(strict_types=1);
+<?php
 if ($argc > 0 && $argv[1] == 'help') {
-    print 'Help';
+    echo 'Help';
 }
 ?>
 --EXPECT--

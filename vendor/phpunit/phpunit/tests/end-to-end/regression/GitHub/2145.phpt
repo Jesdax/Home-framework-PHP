@@ -1,7 +1,8 @@
 --TEST--
 --stop-on-failure fails to stop on PHP 7
 --FILE--
-<?php declare(strict_types=1);
+<?php
+
 $_SERVER['argv'][1] = '--no-configuration';
 $_SERVER['argv'][2] = 'Issue2145Test';
 $_SERVER['argv'][3] = '--stop-on-error';
@@ -19,8 +20,8 @@ Time: %s, Memory: %s
 
 There was 1 error:
 
-1) Issue2145Test::testOne
+1) Issue2145Test
 Exception in %s%eIssue2145Test.php:%d
 %A
 ERRORS!
-Tests: 1, Assertions: 0, Errors: 1.
+Tests: 2, Assertions: 0, Errors: 1.
