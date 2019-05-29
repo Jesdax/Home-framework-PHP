@@ -45,6 +45,14 @@ class App
     {
         $uri = $request->getUri()->getPath();
 
+        $parsedBody = $request->getParsedBody();
+
+        if (array_key_exists('_method', $parsedBody) &&
+            in_array($parsedBody['_method'], ['DELETE', 'PUT'])
+        ) {
+            $request = $request->withMethod($parsedBody['_method']);
+        }
+
         if (!empty($uri) && $uri[-1] === "/") { //If url is not empty && last caract. in url equal "/" so pblm
             return (new Response())
                 ->withStatus(301)

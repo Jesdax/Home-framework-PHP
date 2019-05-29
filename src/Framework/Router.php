@@ -4,6 +4,7 @@ namespace Framework;
 
 
 
+use App\Blog\Actions\AdminBlogAction;
 use Framework\Router\Route;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Expressive\Router\FastRouteRouter;
@@ -27,13 +28,51 @@ class Router
     }
 
     /**
-     * @param string $path
-     * @param string|callable $callable
-     * @param string $name
+     * @param $path
+     * @param $callable
+     * @param string|null $name
      */
-    public function get($path, $callable, $name)
+    public function get($path, $callable, $name = null)
     {
         $this->router->addRoute(new ZendRoute($path, $callable, ['GET'], $name));
+    }
+
+    /**
+     * @param string $path
+     * @param string|callable $callable
+     * @param string|null $name
+     */
+    public function post($path, $callable, $name = null)
+    {
+        $this->router->addRoute(new ZendRoute($path, $callable, ['POST'], $name));
+    }
+
+    /**
+     * @param string $path
+     * @param string|callable $callable
+     * @param string|null $name
+     */
+    public function delete($path, $callable, $name = null)
+    {
+        $this->router->addRoute(new ZendRoute($path, $callable, ['DELETE'], $name));
+    }
+
+
+    /**
+     * Generate route CRUD BLOG
+     * @param string $prefixPath
+     * @param $callable
+     * @param string $prefixName
+     */
+    public function crud(string $prefixPath, $callable, string $prefixName)
+    {
+
+        $this->get("$prefixPath", $callable, $prefixName . '.index');
+        $this->get("$prefixPath/new-article", $callable, $prefixName . '.create');
+        $this->post("$prefixPath/new-article", $callable);
+        $this->get("$prefixPath/{id:\d+}", $callable, $prefixName . '.edit');
+        $this->post("$prefixPath/{id:\d+}", $callable);
+        $this->delete("$prefixPath/{id:\d+}", $callable, $prefixName . '.delete');
     }
 
 
@@ -43,6 +82,7 @@ class Router
      */
     public function match(ServerRequestInterface $request): ?Route
     {
+        //var_dump($request); die();
         $result = $this->router->match($request);
         if ($result->isSuccess()) {
             return new Route(
