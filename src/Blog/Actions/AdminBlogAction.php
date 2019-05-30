@@ -125,6 +125,7 @@ class AdminBlogAction
                 'created_at' => date('Y-m-d H:i:s')
             ]);
             $this->postTable->insert($params);
+            $this->flashService->success('L\'article a bien été créer');
             return $this->redirect('blog.admin.index');
         }
 
