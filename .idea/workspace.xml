@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8582eebc-ec97-487c-a949-7bd3889c413e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Framework/Validator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Framework/Validator/ValidatorError.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Framework/ValidatorTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Framework/Session/FlashService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Framework/Session/FlashService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blog/views/admin/form.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blog/views/admin/form.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Framework/Renderer/TwigRendererFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Framework/Renderer/TwigRendererFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Blog/Table/PostTableTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Blog/Table/PostTableTest.php" afterDir="false" />
     </list>
     <ignored path=".idea" />
     <ignored path=".phpunit.result.cache" />
@@ -55,23 +61,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Framework/Session/FlashService.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="392">
+              <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
+              <folding>
+                <element signature="e#38#67#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/form.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+            <state relative-caret-position="180">
+              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Framework/Renderer/TwigRendererFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding>
-                <element signature="e#38#67#0#PHP" expanded="true" />
+                <element signature="e#37#74#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Framework/Validator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1755">
+              <caret line="117" column="36" selection-start-line="117" selection-start-column="36" selection-end-line="117" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -92,9 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Framework/Renderer/PHPRenderer.php" />
-        <option value="$PROJECT_DIR$/src/Framework/TwigRendererFactory.php" />
-        <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/src/Framework/Router/Route.php" />
         <option value="$PROJECT_DIR$/src/Framework/Router/RouterTwigExtension.php" />
         <option value="$PROJECT_DIR$/src/Blog/db/migrations/20190528131620_create_posts_table.php" />
@@ -117,18 +141,15 @@
         <option value="$PROJECT_DIR$/tests/Blog/Actions/BlogActionTest.php" />
         <option value="$PROJECT_DIR$/phinx.php" />
         <option value="$PROJECT_DIR$/src/Framework/Renderer/TwigRenderer.php" />
-        <option value="$PROJECT_DIR$/src/Framework/Renderer/TwigRendererFactory.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/src/Admin/AdminModule.php" />
         <option value="$PROJECT_DIR$/src/Admin/config.php" />
         <option value="$PROJECT_DIR$/src/Blog/config.php" />
         <option value="$PROJECT_DIR$/tests/DatabaseTestCase.php" />
-        <option value="$PROJECT_DIR$/src/Blog/views/admin/form.twig" />
         <option value="$PROJECT_DIR$/src/Blog/views/admin/edit.twig" />
         <option value="$PROJECT_DIR$/src/Blog/views/admin/create.twig" />
         <option value="$PROJECT_DIR$/src/Framework/App.php" />
-        <option value="$PROJECT_DIR$/tests/Blog/Table/PostTableTest.php" />
         <option value="$PROJECT_DIR$/src/Blog/views/admin/index.twig" />
         <option value="$PROJECT_DIR$/src/Blog/Table/PostTable.php" />
         <option value="$PROJECT_DIR$/src/Framework/Router.php" />
@@ -136,12 +157,18 @@
         <option value="$PROJECT_DIR$/src/Framework/Actions/RouterAwareAction.php" />
         <option value="$PROJECT_DIR$/src/Framework/Session/SessionInterface.php" />
         <option value="$PROJECT_DIR$/src/Framework/Session/PHPSession.php" />
-        <option value="$PROJECT_DIR$/src/Admin/views/layout.twig" />
         <option value="$PROJECT_DIR$/src/Framework/Twig/FlashExtension.php" />
         <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/src/Framework/Session/ArraySession.php" />
         <option value="$PROJECT_DIR$/tests/Framework/Session/FlashServiceTest.php" />
         <option value="$PROJECT_DIR$/src/Framework/Session/FlashService.php" />
+        <option value="$PROJECT_DIR$/src/Admin/views/layout.twig" />
+        <option value="$PROJECT_DIR$/tests/Blog/Table/PostTableTest.php" />
+        <option value="$PROJECT_DIR$/src/Framework/Validator/ValidatorError.php" />
+        <option value="$PROJECT_DIR$/tests/Framework/ValidatorTest.php" />
+        <option value="$PROJECT_DIR$/src/Blog/views/admin/form.twig" />
+        <option value="$PROJECT_DIR$/src/Framework/Renderer/TwigRendererFactory.php" />
+        <option value="$PROJECT_DIR$/src/Framework/Validator.php" />
         <option value="$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php" />
       </list>
     </option>
@@ -271,7 +298,13 @@
               <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -279,13 +312,8 @@
               <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="Actions" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
@@ -298,7 +326,14 @@
               <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Framework" type="462c0819:PsiDirectoryNode" />
-              <item name="Session" type="462c0819:PsiDirectoryNode" />
+              <item name="Renderer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Validator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
@@ -310,13 +345,6 @@
               <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="Framework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Framework" type="462c0819:PsiDirectoryNode" />
-              <item name="Session" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -379,12 +407,12 @@
       <workItem from="1558901044358" duration="6764000" />
       <workItem from="1558952757409" duration="17570000" />
       <workItem from="1559035152746" duration="30231000" />
-      <workItem from="1559130549494" duration="31552000" />
+      <workItem from="1559130549494" duration="46978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106279000" />
+    <option name="totallyTimeSpent" value="121705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1028" extended-state="6" />
@@ -404,7 +432,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295964" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4994664" visible="true" weight="0.28363228" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4994664" visible="true" weight="0.3172646" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053364" side_tool="true" weight="0.28363228" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -437,36 +465,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://a0a33c12-5c2b-4c69-a884-d998cd768442/collation/utf8mb4_bin">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://a0a33c12-5c2b-4c69-a884-d998cd768442/collation/utf32_roman_ci">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/Extension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="73" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/SimpleFunction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Framework/Twig/PagerFantaExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="39" column="40" lean-forward="true" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-          <folding>
-            <element signature="e#34#55#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Framework/RouterTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -596,13 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Framework/Renderer/TwigRendererFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
@@ -685,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/form.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/edit.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -710,16 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Blog/Table/PostTableTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="62" column="60" lean-forward="true" selection-start-line="62" selection-start-column="60" selection-end-line="62" selection-end-column="60" />
-          <folding>
-            <element signature="e#41#66#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -787,20 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/views/layout.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Framework/Session/ArraySession.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -825,6 +785,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Framework/Session/FlashService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
@@ -832,10 +799,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/views/layout.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Blog/Table/PostTableTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
+          <folding>
+            <element signature="e#41#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="338" column="9" selection-start-line="338" selection-start-column="9" selection-end-line="338" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Framework/ValidatorTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="86" column="82" selection-start-line="86" selection-start-column="82" selection-end-line="86" selection-end-column="82" />
+          <folding>
+            <element signature="e#34#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Validator/ValidatorError.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/form.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="919" column="30" lean-forward="true" selection-start-line="919" selection-start-column="30" selection-end-line="919" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Renderer/TwigRendererFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="e#37#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Validator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="117" column="36" selection-start-line="117" selection-start-column="36" selection-end-line="117" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+        <state relative-caret-position="392">
+          <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
           <folding>
             <element signature="e#38#67#0#PHP" expanded="true" />
           </folding>

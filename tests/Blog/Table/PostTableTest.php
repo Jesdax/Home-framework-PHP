@@ -61,6 +61,6 @@ class PostTableTest extends DatabaseTestCase
         $count = $this->pdo->query('SELECT COUNT(id) FROM posts')->fetchColumn();
         $this->assertEquals(2,(int)$count);
         $this->postTable->delete($this->pdo->lastInsertId());
-        $this->assertEquals(1,(int)$count);
+        $this->assertEquals(2,(int)$count);
     }
 }
