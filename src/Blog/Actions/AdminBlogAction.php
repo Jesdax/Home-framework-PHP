@@ -8,6 +8,8 @@ use App\Blog\Table\PostTable;
 use Framework\Actions\RouterAwareAction;
 use Framework\Renderer\RendererInterface;
 use Framework\Router;
+use Framework\Session\FlashService;
+use Framework\Session\SessionInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface as Request;
 
@@ -25,14 +27,18 @@ class AdminBlogAction
 
     private $router;
 
+
+    private $flashService;
+
     use RouterAwareAction;
 
 
-    public function __construct(RendererInterface $renderer, Router $router, PostTable $postTable)
+    public function __construct(RendererInterface $renderer, Router $router, PostTable $postTable, FlashService $flashService)
     {
         $this->renderer = $renderer;
         $this->router = $router;
         $this->postTable = $postTable;
+        $this->flashService = $flashService;
     }
 
     public function __invoke(Request $request)
@@ -72,6 +78,7 @@ class AdminBlogAction
             $params['updated_at'] = date('Y-m-d H:i:s');
             //var_dump($params);
             $this->postTable->update($item->id, $params);
+            $this->flashService->success('L\'article a bien été modifié');
              return $this->redirect('blog.admin.index');
         }
 

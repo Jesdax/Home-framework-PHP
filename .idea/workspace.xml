@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8582eebc-ec97-487c-a949-7bd3889c413e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Framework/Session/PHPSession.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Framework/Session/SessionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Framework/Session/ArraySession.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Framework/Session/FlashService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Framework/Twig/FlashExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Framework/Session/FlashServiceTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin/views/layout.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin/views/layout.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php" afterDir="false" />
     </list>
     <ignored path=".idea" />
     <ignored path=".phpunit.result.cache" />
@@ -56,20 +61,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Framework/Session/SessionInterface.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Framework/Session/FlashService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="25" />
+            <state relative-caret-position="527">
+              <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Framework/Session/PHPSession.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Framework/Session/FlashServiceTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            <state relative-caret-position="452">
+              <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+              <folding>
+                <element signature="e#43#78#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Framework/Session/ArraySession.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -80,6 +97,9 @@
     <findStrings>
       <find>R</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/tests/Framework</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,10 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Framework/RendererInterface.php" />
-        <option value="$PROJECT_DIR$/src/Framework/Renderer/RendererInterface.php" />
-        <option value="$PROJECT_DIR$/tests/Framework/RendererTest.php" />
-        <option value="$PROJECT_DIR$/tests/Framework/Renderer/PHPRendererTest.php" />
         <option value="$PROJECT_DIR$/src/Framework/Renderer/PHPRenderer.php" />
         <option value="$PROJECT_DIR$/src/Framework/TwigRendererFactory.php" />
         <option value="$PROJECT_DIR$/config.php" />
@@ -109,7 +125,6 @@
         <option value="$PROJECT_DIR$/src/Blog/Actions/BlogAction.php" />
         <option value="$PROJECT_DIR$/tests/Framework/Twig/TimeExtensionTest.php" />
         <option value="$PROJECT_DIR$/src/Blog/views/show.twig" />
-        <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/src/Framework/Twig/TimeExtension.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/255b389d-8de5-4b31-bc2d-e0e55c57cc69/console.sql" />
         <option value="$PROJECT_DIR$/src/Framework/Database/PaginatedQuery.php" />
@@ -119,7 +134,6 @@
         <option value="$PROJECT_DIR$/src/Framework/Renderer/TwigRenderer.php" />
         <option value="$PROJECT_DIR$/src/Framework/Renderer/TwigRendererFactory.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/Admin/views/layout.twig" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/src/Admin/AdminModule.php" />
         <option value="$PROJECT_DIR$/src/Admin/config.php" />
@@ -130,7 +144,6 @@
         <option value="$PROJECT_DIR$/src/Blog/views/admin/create.twig" />
         <option value="$PROJECT_DIR$/src/Framework/App.php" />
         <option value="$PROJECT_DIR$/tests/Blog/Table/PostTableTest.php" />
-        <option value="$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php" />
         <option value="$PROJECT_DIR$/src/Blog/views/admin/index.twig" />
         <option value="$PROJECT_DIR$/src/Blog/Table/PostTable.php" />
         <option value="$PROJECT_DIR$/src/Framework/Router.php" />
@@ -138,6 +151,13 @@
         <option value="$PROJECT_DIR$/src/Framework/Actions/RouterAwareAction.php" />
         <option value="$PROJECT_DIR$/src/Framework/Session/SessionInterface.php" />
         <option value="$PROJECT_DIR$/src/Framework/Session/PHPSession.php" />
+        <option value="$PROJECT_DIR$/src/Admin/views/layout.twig" />
+        <option value="$PROJECT_DIR$/src/Framework/Twig/FlashExtension.php" />
+        <option value="$PROJECT_DIR$/config/config.php" />
+        <option value="$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php" />
+        <option value="$PROJECT_DIR$/src/Framework/Session/ArraySession.php" />
+        <option value="$PROJECT_DIR$/tests/Framework/Session/FlashServiceTest.php" />
+        <option value="$PROJECT_DIR$/src/Framework/Session/FlashService.php" />
       </list>
     </option>
   </component>
@@ -244,6 +264,11 @@
             <path>
               <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -255,12 +280,43 @@
               <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Framework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Session" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="Framework" type="462c0819:PsiDirectoryNode" />
               <item name="Session" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -281,7 +337,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -325,18 +381,18 @@
       <workItem from="1558901044358" duration="6764000" />
       <workItem from="1558952757409" duration="17570000" />
       <workItem from="1559035152746" duration="30231000" />
-      <workItem from="1559130549494" duration="28614000" />
+      <workItem from="1559130549494" duration="31249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103341000" />
+    <option name="totallyTimeSpent" value="105976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15261473" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15261473" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" weight="0.3295964" />
@@ -350,7 +406,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295964" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4994664" visible="true" weight="0.28363228" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4994664" visible="true" weight="0.28363228" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053364" side_tool="true" weight="0.28363228" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -383,18 +439,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/229dd872-f4f0-4148-9ff4-225c168a0461/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a5020f58-40f0-4314-accc-4321cf675d52/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://a0a33c12-5c2b-4c69-a884-d998cd768442/collation/utf8_general_ci">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a0a33c12-5c2b-4c69-a884-d998cd768442/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="das://a0a33c12-5c2b-4c69-a884-d998cd768442/collation/utf8mb4_bin">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -582,23 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding>
-            <element signature="e#6#29#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/views/layout.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -698,26 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="128" column="63" selection-start-line="128" selection-start-column="63" selection-end-line="128" selection-end-column="63" />
-          <folding>
-            <element signature="e#38#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-          <folding>
-            <element signature="e#722#746#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Framework/Router.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -762,10 +769,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Twig/FlashExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+          <folding>
+            <element signature="e#33#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="63" lean-forward="true" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
+          <folding>
+            <element signature="e#6#29#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="69" column="7" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
+          <folding>
+            <element signature="e#38#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/views/layout.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Framework/Session/PHPSession.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        <state relative-caret-position="257">
+          <caret line="39" column="50" lean-forward="true" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Session/ArraySession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Framework/Session/FlashServiceTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+          <folding>
+            <element signature="e#43#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Session/FlashService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
         </state>
       </provider>
     </entry>

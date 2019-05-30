@@ -4,6 +4,8 @@ use Framework\Renderer\TwigRendererFactory;
 use Framework\Router\RouterTwigExtension;
 use Framework\Twig\PagerFantaExtension;
 use Framework\Twig\TextExtension;
+use Framework\Twig\TimeExtension;
+use Framework\Twig\FlashExtension;
 
 return [
     'database.host' => 'localhost',
@@ -15,10 +17,12 @@ return [
         \DI\get(RouterTwigExtension::class),
         \DI\get(PagerFantaExtension::class),
         \DI\get(TextExtension::class),
-        \DI\get(\Framework\Twig\TimeExtension::class)
+        \DI\get(TimeExtension::class),
+        \DI\get(FlashExtension::class)
     ],
+    \Framework\Session\SessionInterface::class => \DI\autowire(\Framework\Session\PHPSession::class),
     \Framework\Router::class => \DI\autowire(),
-Renderer\RendererInterface::class => \DI\factory(TwigRendererFactory::class),
+    Renderer\RendererInterface::class => \DI\factory(TwigRendererFactory::class),
     \PDO::class => function (\Psr\Container\ContainerInterface $c) {
         return new PDO(
             'mysql:host=' . $c->get('database.host') . ';dbname=' . $c->get('database.name'),
