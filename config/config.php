@@ -6,6 +6,7 @@ use Framework\Twig\PagerFantaExtension;
 use Framework\Twig\TextExtension;
 use Framework\Twig\TimeExtension;
 use Framework\Twig\FlashExtension;
+use Framework\Twig\FormExtension;
 
 return [
     'database.host' => 'localhost',
@@ -18,7 +19,8 @@ return [
         \DI\get(PagerFantaExtension::class),
         \DI\get(TextExtension::class),
         \DI\get(TimeExtension::class),
-        \DI\get(FlashExtension::class)
+        \DI\get(FlashExtension::class),
+        \DI\get(FormExtension::class)
     ],
     \Framework\Session\SessionInterface::class => \DI\autowire(\Framework\Session\PHPSession::class),
     \Framework\Router::class => \DI\autowire(),
