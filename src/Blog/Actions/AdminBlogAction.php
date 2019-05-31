@@ -4,6 +4,7 @@ namespace App\Blog\Actions;
 
 
 
+use App\Blog\Entity\Post;
 use App\Blog\Table\PostTable;
 use Framework\Actions\RouterAwareAction;
 use Framework\Renderer\RendererInterface;
@@ -123,6 +124,7 @@ class AdminBlogAction
      * Create a new article
      * @param Request $request
      * @return false|ResponseInterface|string
+     * @throws \Exception
      */
     public function create(Request $request)
     {
@@ -140,6 +142,8 @@ class AdminBlogAction
             $item = $params;
             $errors = $validator->getErrors();
         }
+        $item = new Post();
+        $item->created_at = new \DateTime();
         return $this->renderer->render('@blog/admin/create', compact('item', 'errors'));
     }
 
@@ -164,12 +168,18 @@ class AdminBlogAction
         ]);
     }
 
+    /**
+     * @param Request $request
+     * @return Validator
+     */
     private function getValidator(Request $request)
     {
-        return (new Validator($request->getParsedBody()))->required('content', 'name', 'slug')
+        return (new Validator($request->getParsedBody()))
+            ->required('content', 'name', 'slug', 'created_at')
             ->length('content', 10)
             ->length('name', 2, 250)
             ->length('slug', 2, 50)
+            ->dateTime('created_at')
             ->slug('slug');
     }
 }
