@@ -3,7 +3,7 @@ namespace Tests\App\Blog\Actions;
 
 
 
-use App\Blog\Actions\BlogAction;
+use App\Blog\Actions\PostShowAction;
 use App\Blog\Entity\Post;
 use App\Blog\Table\PostTable;
 use Framework\Renderer\RendererInterface;
@@ -12,11 +12,11 @@ use GuzzleHttp\Psr7\ServerRequest;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
 
-class BlogActionTest extends TestCase
+class PostShowActionTest extends TestCase
 {
 
     /**
-     * @var BlogAction
+     * @var PostShowActionTest
      */
     private $action;
 
@@ -30,13 +30,13 @@ class BlogActionTest extends TestCase
     private $router;
 
 
-    public function setUp(): void
+    public function setUp()
     {
         $this->renderer = $this->prophesize(RendererInterface::class);
         $this->postTable = $this->prophesize(PostTable::class);
         //PDO
         $this->router = $this->prophesize(Router::class);
-        $this->action = new BlogAction(
+        $this->action = new PostShowAction(
             $this->renderer->reveal(),
             $this->router->reveal(),
             $this->postTable->reveal()

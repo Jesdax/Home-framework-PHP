@@ -12,7 +12,7 @@ class Table
     /**
      * @var \PDO
      */
-    private $pdo;
+    protected $pdo;
 
 
     /**
@@ -97,6 +97,17 @@ class Table
             $list[$result[0]] = $result[1];
         }
         return $list;
+    }
+
+    public function findAll(): array
+    {
+        $statement = $this->pdo->query("SELECT * FROM {$this->table}");
+        if ($this->entity) {
+            $statement->setFetchMode(\PDO::FETCH_CLASS, $this->entity);
+        } else {
+            $statement->setFetchMode(\PDO::FETCH_OBJ);
+        }
+        return $statement->fetchAll();
     }
 
     /**

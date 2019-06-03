@@ -3,7 +3,6 @@ namespace App\Blog\Actions;
 
 
 
-
 use App\Blog\Table\PostTable;
 use Framework\Actions\RouterAwareAction;
 use Framework\Renderer\RendererInterface;
@@ -11,7 +10,7 @@ use Framework\Router;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface as Request;
 
-class BlogAction
+class PostShowAction
 {
 
     /**
@@ -25,32 +24,19 @@ class BlogAction
 
     private $router;
 
+
     use RouterAwareAction;
 
 
-    public function __construct(RendererInterface $renderer, Router $router, PostTable $postTable)
-    {
+    public function __construct(
+        RendererInterface $renderer,
+        Router $router,
+        PostTable $postTable
+    ) {
         $this->renderer = $renderer;
         $this->router = $router;
         $this->postTable = $postTable;
     }
-
-    public function __invoke(Request $request)
-    {
-        if ($request->getAttribute('id')) {
-            return $this->show($request);
-        }
-            return $this->index($request);
-    }
-
-
-    public function index(Request $request): string
-    {
-        $params = $request->getQueryParams();
-        $posts = $this->postTable->findPaginated(12, $params['p'] ?? 1);
-        return $this->renderer->render('@blog/index', compact('posts'));
-    }
-
 
     /**
      * Show article
@@ -58,7 +44,7 @@ class BlogAction
      * @param Request $request
      * @return ResponseInterface|string
      */
-    public function show(Request $request)
+    public function __invoke(Request $request)
     {
         $slug = $request->getAttribute('slug');
 
