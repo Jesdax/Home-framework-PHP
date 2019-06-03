@@ -5,13 +5,14 @@
 {% block body %}
 
     <p class="text-right">
-        <a href="{{ path('blog.admin.create') }}" class="btn btn-success">Ajouter un article</a>
+        <a href="{{ path(routePrefix ~ '.create') }}" class="btn btn-success">Ajouter un article</a>
     </p>
     
     <table class="table table-striped">
         <thead>
         <tr>
             <td>Titre</td>
+            <td>Catégorie</td>
             <td>Actions</td>
         </tr>
         </thead>
@@ -22,8 +23,11 @@
                         {{ item.name }}
                     </td>
                     <td>
-                        <a href="{{ path('blog.admin.edit', {id: item.id}) }}" class="btn btn-primary">Editer</a>
-                        <form style="display: inline;" action="{{ path('blog.admin.delete', {id: item.id}) }}" method="post" onsubmit="return confirm('Etes-vous sûr ?')">
+                        {{ item.category_name }}
+                    </td>
+                    <td>
+                        <a href="{{ path(routePrefix ~ '.edit', {id: item.id}) }}" class="btn btn-primary">Editer</a>
+                        <form style="display: inline;" action="{{ path(routePrefix ~ '.delete', {id: item.id}) }}" method="post" onsubmit="return confirm('Etes-vous sûr ?')">
                             <input type="hidden" name="_method" value="DELETE">
                             <button class="btn btn-danger">Supprimer</button>
                         </form>
@@ -33,6 +37,6 @@
         </tbody>
     </table>
 
-    {{ paginate(items, 'blog.admin.index') }}
+    {{ paginate(items, routePrefix ~ '.index') }}
 
 {% endblock %}

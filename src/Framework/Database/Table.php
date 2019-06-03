@@ -14,6 +14,7 @@ class Table
      */
     private $pdo;
 
+
     /**
      * Name of the table on BDD
      * @var string
@@ -26,6 +27,14 @@ class Table
      * @var string|null
      */
     protected $entity;
+
+    /**
+     * @return \PDO
+     */
+    public function getPdo(): \PDO
+    {
+        return $this->pdo;
+    }
 
     /**
      * @return string
@@ -61,7 +70,7 @@ class Table
         $query = new PaginatedQuery(
             $this->pdo,
             $this->paginationQuery(),
-            "SELECT COUNT(id) FROM posts",
+            "SELECT COUNT(id) FROM {$this->table}",
             $this->entity
         );
         return (new Pagerfanta($query))
@@ -72,6 +81,22 @@ class Table
     protected function paginationQuery()
     {
         return 'SELECT * FROM ' . $this->table;
+    }
+
+
+    /**
+     * Retrieves a key value list of our records
+     * @return array
+     */
+    public function findList(): array
+    {
+        $results = $this->pdo->query("SELECT id, name FROM {$this->table}")
+            ->fetchAll(\PDO::FETCH_NUM);
+        $list = [];
+        foreach ($results as $result) {
+            $list[$result[0]] = $result[1];
+        }
+        return $list;
     }
 
     /**
@@ -132,6 +157,18 @@ class Table
     {
         $statement = $this->pdo->prepare("DELETE FROM {$this->table} WHERE id = ?");
         return $statement->execute([$id]);
+    }
+
+    /**
+     * Tchek if registration exists
+     * @param $id
+     * @return bool
+     */
+    public function exists($id)
+    {
+        $statement = $this->pdo->prepare("SELECT id FROM {$this->table} WHERE id = ?");
+        $statement->execute([$id]);
+        return $statement->fetchColumn() !== false;
     }
 
     private function buildFieldQuery(array $params)

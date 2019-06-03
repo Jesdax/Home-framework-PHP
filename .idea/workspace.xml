@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8582eebc-ec97-487c-a949-7bd3889c413e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Framework/Database/Table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blog/Actions/CategoryCrudAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blog/Table/CategoryTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blog/views/admin/categories/create.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blog/views/admin/categories/edit.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blog/views/admin/categories/index.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blog/views/admin/posts/form.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Framework/Actions/CrudAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Framework/Database/TableTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blog/Actions/PostCrudAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blog/BlogModule.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blog/BlogModule.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blog/Entity/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blog/Entity/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Blog/Table/PostTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blog/Table/PostTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Framework/Database/PaginatedQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Framework/Database/PaginatedQuery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blog/views/admin/create.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blog/views/admin/posts/create.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blog/views/admin/edit.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blog/views/admin/posts/edit.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blog/views/admin/form.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blog/views/admin/categories/form.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blog/views/admin/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blog/views/admin/posts/index.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Framework/Database/Table.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Framework/Database/Table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Framework/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Framework/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Framework/Twig/FormExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Framework/Twig/FormExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Framework/Validator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Framework/Validator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Framework/Validator/ValidatorError.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Framework/Validator/ValidatorError.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/DatabaseTestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DatabaseTestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Framework/Twig/FormExtensionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Framework/Twig/FormExtensionTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Framework/ValidatorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Framework/ValidatorTest.php" afterDir="false" />
     </list>
     <ignored path=".idea" />
     <ignored path=".phpunit.result.cache" />
@@ -52,37 +73,92 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="homeframework: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="homeframework@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="homeframework: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="categories: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Blog/Table/PostTable.php">
+        <entry file="file://$PROJECT_DIR$/src/Framework/Validator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#34#59#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-615">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Framework/Database/Table.php">
+        <entry file="file://$PROJECT_DIR$/tests/Blog/Table/PostTableTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+            <state relative-caret-position="432">
+              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+              <folding>
+                <element signature="e#41#66#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Framework/Database/PaginatedQuery.php">
+        <entry file="file://$PROJECT_DIR$/tests/Framework/ValidatorTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+            <state relative-caret-position="437">
+              <caret line="103" column="51" selection-start-line="103" selection-start-column="51" selection-end-line="103" selection-end-column="51" />
+              <folding>
+                <element signature="e#34#58#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Framework/Database/Table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="168" column="8" selection-start-line="168" selection-start-column="8" selection-end-line="170" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Framework/Database/TableTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding>
+                <element signature="e#43#72#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/DatabaseTestCase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <element signature="e#25#33#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Framework/Actions/CrudAction.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+              <folding>
+                <element signature="e#44#84#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,35 +179,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Framework/Module.php" />
-        <option value="$PROJECT_DIR$/src/Blog/db/seeds/PostSeeder.php" />
-        <option value="$PROJECT_DIR$/phpcs.xml" />
-        <option value="$PROJECT_DIR$/src/Framework/Twig/PagerFantaExtension.php" />
-        <option value="$PROJECT_DIR$/tests/Framework/RouterTest.php" />
-        <option value="$PROJECT_DIR$/tests/Framework/Twig/TextExtensionTest.php" />
-        <option value="$PROJECT_DIR$/src/Framework/Twig/TextExtension.php" />
-        <option value="$PROJECT_DIR$/src/Blog/Entity/Post.php" />
-        <option value="$PROJECT_DIR$/src/Blog/Actions/BlogAction.php" />
-        <option value="$PROJECT_DIR$/tests/Framework/Twig/TimeExtensionTest.php" />
-        <option value="$PROJECT_DIR$/src/Blog/views/show.twig" />
-        <option value="$PROJECT_DIR$/src/Framework/Twig/TimeExtension.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/255b389d-8de5-4b31-bc2d-e0e55c57cc69/console.sql" />
-        <option value="$PROJECT_DIR$/src/Blog/views/index.twig" />
-        <option value="$PROJECT_DIR$/tests/Blog/Actions/BlogActionTest.php" />
-        <option value="$PROJECT_DIR$/phinx.php" />
         <option value="$PROJECT_DIR$/src/Framework/Renderer/TwigRenderer.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/src/Admin/AdminModule.php" />
         <option value="$PROJECT_DIR$/src/Admin/config.php" />
         <option value="$PROJECT_DIR$/src/Blog/config.php" />
-        <option value="$PROJECT_DIR$/tests/DatabaseTestCase.php" />
         <option value="$PROJECT_DIR$/src/Blog/views/admin/edit.twig" />
         <option value="$PROJECT_DIR$/src/Blog/views/admin/create.twig" />
         <option value="$PROJECT_DIR$/src/Framework/App.php" />
         <option value="$PROJECT_DIR$/src/Blog/views/admin/index.twig" />
         <option value="$PROJECT_DIR$/src/Framework/Router.php" />
-        <option value="$PROJECT_DIR$/src/Blog/BlogModule.php" />
         <option value="$PROJECT_DIR$/src/Framework/Actions/RouterAwareAction.php" />
         <option value="$PROJECT_DIR$/src/Framework/Session/SessionInterface.php" />
         <option value="$PROJECT_DIR$/src/Framework/Session/PHPSession.php" />
@@ -140,20 +198,38 @@
         <option value="$PROJECT_DIR$/tests/Framework/Session/FlashServiceTest.php" />
         <option value="$PROJECT_DIR$/src/Framework/Session/FlashService.php" />
         <option value="$PROJECT_DIR$/tests/Blog/Table/PostTableTest.php" />
-        <option value="$PROJECT_DIR$/src/Framework/Validator/ValidatorError.php" />
         <option value="$PROJECT_DIR$/src/Framework/Renderer/TwigRendererFactory.php" />
         <option value="$PROJECT_DIR$/config/config.php" />
         <option value="$PROJECT_DIR$/views/layout.twig" />
         <option value="$PROJECT_DIR$/src/Admin/views/layout.twig" />
         <option value="$PROJECT_DIR$/src/Blog/views/admin/form.twig" />
+        <option value="$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php" />
+        <option value="$PROJECT_DIR$/src/Framework/Database/PaginatedQuery.php" />
+        <option value="$PROJECT_DIR$/src/Blog/views/admin/posts/create.twig" />
+        <option value="$PROJECT_DIR$/src/Blog/views/admin/posts/edit.twig" />
+        <option value="$PROJECT_DIR$/src/Blog/db/migrations/20190601214144_add_category_table.php" />
+        <option value="$PROJECT_DIR$/src/Blog/Table/CategoryTable.php" />
+        <option value="$PROJECT_DIR$/src/Blog/BlogModule.php" />
+        <option value="$PROJECT_DIR$/src/Blog/Actions/CategoryCrudAction.php" />
+        <option value="$PROJECT_DIR$/src/Blog/views/admin/categories/create.twig" />
+        <option value="$PROJECT_DIR$/src/Blog/views/admin/categories/edit.twig" />
+        <option value="$PROJECT_DIR$/src/Blog/views/admin/categories/form.twig" />
+        <option value="$PROJECT_DIR$/src/Blog/views/admin/categories/index.twig" />
+        <option value="$PROJECT_DIR$/src/Blog/db/migrations/20190601231634_add_category_id_to_post.php" />
+        <option value="$PROJECT_DIR$/src/Blog/Entity/Post.php" />
+        <option value="$PROJECT_DIR$/src/Blog/Table/PostTable.php" />
+        <option value="$PROJECT_DIR$/src/Blog/views/admin/posts/index.twig" />
+        <option value="$PROJECT_DIR$/src/Blog/views/admin/posts/form.twig" />
         <option value="$PROJECT_DIR$/tests/Framework/Twig/FormExtensionTest.php" />
         <option value="$PROJECT_DIR$/src/Framework/Twig/FormExtension.php" />
+        <option value="$PROJECT_DIR$/src/Framework/Actions/CrudAction.php" />
+        <option value="$PROJECT_DIR$/tests/Framework/Database/TableTest.php" />
+        <option value="$PROJECT_DIR$/src/Framework/Database/Table.php" />
+        <option value="$PROJECT_DIR$/src/Framework/Validator/ValidatorError.php" />
+        <option value="$PROJECT_DIR$/src/Blog/Actions/PostCrudAction.php" />
+        <option value="$PROJECT_DIR$/tests/DatabaseTestCase.php" />
         <option value="$PROJECT_DIR$/tests/Framework/ValidatorTest.php" />
         <option value="$PROJECT_DIR$/src/Framework/Validator.php" />
-        <option value="$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php" />
-        <option value="$PROJECT_DIR$/src/Blog/Table/PostTable.php" />
-        <option value="$PROJECT_DIR$/src/Framework/Database/Table.php" />
-        <option value="$PROJECT_DIR$/src/Framework/Database/PaginatedQuery.php" />
       </list>
     </option>
   </component>
@@ -161,7 +237,7 @@
     <option name="filePaths">
       <list>
         <option value="$PROJECT_DIR$/tests/Blog/Table/PostTableTest.php" />
-        <option value="$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php" />
+        <option value="$PROJECT_DIR$/src/Blog/Actions/PostCrudAction.php" />
         <option value="$PROJECT_DIR$/src/Blog/BlogModule.php" />
         <option value="$PROJECT_DIR$/src/Blog/Table/PostTable.php" />
       </list>
@@ -250,6 +326,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,12 +353,6 @@
               <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Framework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -289,7 +360,45 @@
               <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Framework" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="Actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Twig" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Validator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Blog" type="462c0819:PsiDirectoryNode" />
+              <item name="Table" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Framework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HomeFramework" type="b2602c69:ProjectViewProjectNode" />
@@ -300,7 +409,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,19 +417,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Framework/Twig" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Blog/views" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tests/Framework/Twig" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Blog/views/admin/categories" />
+      <recent name="$PROJECT_DIR$/src/Blog/views/admin" />
+      <recent name="$PROJECT_DIR$/src/Blog/views/admin/posts" />
       <recent name="$PROJECT_DIR$/src/Framework/Renderer" />
       <recent name="$PROJECT_DIR$/tests/Framework/Renderer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Blog/views" />
+      <recent name="$PROJECT_DIR$/tests/Framework/Twig" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -359,17 +471,19 @@
       <workItem from="1559035152746" duration="30231000" />
       <workItem from="1559130549494" duration="47369000" />
       <workItem from="1559304331951" duration="10564000" />
-      <workItem from="1559397445305" duration="3034000" />
+      <workItem from="1559397445305" duration="10850000" />
+      <workItem from="1559565267278" duration="8016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135694000" />
+    <option name="totallyTimeSpent" value="151526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1028" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15581644" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15741728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -382,13 +496,13 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295964" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4994664" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053364" side_tool="true" weight="0.28363228" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49893278" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010672" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.3295964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2497332" />
-      <window_info anchor="right" id="Database" order="3" weight="0.1782284" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.1782284" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1456777" />
@@ -416,114 +530,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/lib/Twig/SimpleFilter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Framework/Twig/TextExtensionTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" column="78" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
-          <folding>
-            <element signature="e#40#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Framework/Twig/TextExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="e#34#71#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://255b389d-8de5-4b31-bc2d-e0e55c57cc69/schema/homeframework/table/posts">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="8f1d8c5c-c291-47c2-b19a-9a311350e4e5">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/Entity/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Framework/Twig/TimeExtensionTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="e#40#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/views/show.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/255b389d-8de5-4b31-bc2d-e0e55c57cc69/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="50" lean-forward="true" selection-start-column="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Framework/Twig/TimeExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-          <folding>
-            <element signature="e#34#71#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Blog/Actions/BlogActionTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding>
-            <element signature="e#43#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phinx.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Framework/Renderer/TwigRenderer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="2127" column="7" lean-forward="true" selection-start-line="2127" selection-start-column="7" selection-end-line="2127" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -565,44 +571,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/Actions/BlogAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="58" column="39" lean-forward="true" selection-end-line="77" />
-          <folding>
-            <element signature="e#38#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blog/views/index.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="45" selection-end-line="39" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/DatabaseTestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="43" lean-forward="true" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="e#25#33#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/edit.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/create.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="61" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -619,23 +591,6 @@
           <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
           <folding>
             <element signature="e#31#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/BlogModule.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Framework/Actions/RouterAwareAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="e#37#66#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -681,13 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Framework/Session/FlashService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
@@ -695,27 +643,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Blog/Table/PostTableTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
-          <folding>
-            <element signature="e#41#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
           <caret line="338" column="9" selection-start-line="338" selection-start-column="9" selection-end-line="338" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Framework/Validator/ValidatorError.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -730,33 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Framework/ValidatorTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-          <folding>
-            <element signature="e#34#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Framework/Validator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Framework/Twig/FormExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
-          <folding>
-            <element signature="e#34#54#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -784,43 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/form.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Framework/Twig/FormExtensionTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="48" column="92" selection-start-line="48" selection-start-column="92" selection-end-line="48" selection-end-column="92" />
-          <folding>
-            <element signature="e#40#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/Actions/AdminBlogAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="180" column="35" lean-forward="true" selection-start-line="180" selection-start-column="35" selection-end-line="180" selection-end-column="35" />
-          <folding>
-            <element signature="e#38#63#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blog/Table/PostTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#34#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Framework/Database/PaginatedQuery.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -828,10 +695,252 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/Actions/BlogAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="58" column="39" lean-forward="true" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+          <folding>
+            <element signature="e#38#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/posts/create.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/posts/edit.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/db/migrations/20190601214144_add_category_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twig/twig/src/Loader/FilesystemLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="258" column="5" lean-forward="true" selection-start-line="258" selection-start-column="5" selection-end-line="258" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/BlogModule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+          <folding>
+            <element signature="e#28#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/categories/create.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/db/migrations/20190601231634_add_category_id_to_post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/categories/edit.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/categories/form.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/categories/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="99" selection-start-line="7" selection-start-column="99" selection-end-line="7" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/Entity/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/Table/PostTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#34#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/Actions/CategoryCrudAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+          <folding>
+            <element signature="e#38#71#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Twig/TimeExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/posts/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Actions/RouterAwareAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="e#37#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/Table/CategoryTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/views/admin/posts/form.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="83" selection-start-line="5" selection-start-column="83" selection-end-line="5" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Framework/Twig/FormExtensionTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="96" column="57" lean-forward="true" selection-start-line="96" selection-start-column="57" selection-end-line="96" selection-end-column="57" />
+          <folding>
+            <element signature="e#40#73#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Twig/FormExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="120" column="31" lean-forward="true" selection-start-line="120" selection-start-column="31" selection-end-line="120" selection-end-column="31" />
+          <folding>
+            <element signature="e#34#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/Actions/PostCrudAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="70" column="100" selection-start-line="70" selection-start-column="100" selection-end-line="70" selection-end-column="100" />
+          <folding>
+            <element signature="e#39#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Validator/ValidatorError.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Actions/CrudAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#44#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/DatabaseTestCase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#25#33#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Framework/Database/TableTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#43#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Framework/Database/Table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+        <state relative-caret-position="347">
+          <caret line="168" column="8" selection-start-line="168" selection-start-column="8" selection-end-line="170" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Framework/ValidatorTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="103" column="51" selection-start-line="103" selection-start-column="51" selection-end-line="103" selection-end-column="51" />
+          <folding>
+            <element signature="e#34#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Validator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-615">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Blog/Table/PostTableTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="e#41#66#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

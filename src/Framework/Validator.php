@@ -2,6 +2,7 @@
 namespace Framework;
 
 
+
 use Framework\Validator\ValidatorError;
 
 class Validator
@@ -56,6 +57,12 @@ class Validator
     }
 
 
+    /**
+     * @param string $key
+     * @param int|null $min
+     * @param int|null $max
+     * @return Validator
+     */
     public function length(string $key, ?int $min, ?int $max = null): self
     {
         $value = $this->getValue($key);
@@ -100,6 +107,11 @@ class Validator
     }
 
 
+    /**
+     * @param string $key
+     * @param string $format
+     * @return Validator
+     */
     public function dateTime(string $key, string $format = 'Y-m-d H:i:s'): self
     {
         $value = $this->getValue($key);
@@ -113,6 +125,9 @@ class Validator
     }
 
 
+    /**
+     * @return bool
+     */
     public function isValid(): bool
     {
         return empty($this->errors);
@@ -140,11 +155,33 @@ class Validator
     }
 
 
+    /**
+     * @param string $key
+     * @return mixed|null
+     */
     private function getValue(string $key)
     {
         if (array_key_exists($key, $this->params)) {
             return $this->params[$key];
         }
         return null;
+    }
+
+
+    /**
+     * @param string $key
+     * @param string $table
+     * @param \PDO $pdo
+     * @return Validator
+     */
+    public function exists(string $key, string $table, \PDO $pdo): self
+    {
+        $value = $this->getValue($key);
+        $statement = $pdo->prepare("SELECT id FROM $table WHERE id = ?");
+        $statement->execute([$value]);
+        if ($statement->fetchColumn() === false) {
+            $this->addError($key, 'exists', [$table]);
+        }
+        return $this;
     }
 }
