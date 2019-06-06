@@ -29,15 +29,23 @@ class PagerFantaExtension extends AbstractExtension
     }
 
 
-    public function paginate(Pagerfanta $paginatedResults, $route, array $queryArgs = [])
+    /**
+     * Generate pagination
+     * @param Pagerfanta $paginatedResults
+     * @param $route
+     * @param array $routerParams
+     * @param array $queryArgs
+     * @return string
+     */
+    public function paginate(Pagerfanta $paginatedResults, $route, array $routerParams = [], array $queryArgs = [])
     {
 
         $view = new TwitterBootstrap4View();
-        return $html = $view->render($paginatedResults, function (int $page) use ($route, $queryArgs) {
+        return $html = $view->render($paginatedResults, function (int $page) use ($route, $routerParams, $queryArgs) {
             if ($page > 1) {
                 $queryArgs['p'] = $page;
             }
-            return $this->router->generateUri($route, [], ['p' => $page]);
+            return $this->router->generateUri($route, $routerParams, $queryArgs);
         });
     }
 }

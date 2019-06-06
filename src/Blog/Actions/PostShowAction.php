@@ -39,7 +39,7 @@ class PostShowAction
     }
 
     /**
-     * Show article
+     *
      *
      * @param Request $request
      * @return ResponseInterface|string
@@ -48,7 +48,7 @@ class PostShowAction
     {
         $slug = $request->getAttribute('slug');
 
-        $post = $this->postTable->find($request->getAttribute('id'));
+        $post = $this->postTable->findWithCategory($request->getAttribute('id'));
         if ($post->slug !== $slug) {
             return $this->redirect('blog.show', [
                 'slug' => $post->slug,

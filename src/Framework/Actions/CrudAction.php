@@ -25,7 +25,7 @@ class CrudAction
     /**
      * @var Table
      */
-    private $table;
+    protected $table;
 
 
     /**
@@ -126,7 +126,7 @@ class CrudAction
                 return $this->redirect($this->routePrefix . '.index');
             }
             $errors = $validator->getErrors();
-            var_dump($errors);
+            //var_dump($errors);
             $params['id'] = $item->id;
             $item = $params;
         }
@@ -137,10 +137,10 @@ class CrudAction
 
 
     /**
-     * Show element
-     *
+     * Show Element
      * @param Request $request
-     * @return ResponseInterface|string
+     * @return false|ResponseInterface|string
+     * @throws \Framework\Database\NoRecordException
      */
     public function show(Request $request)
     {

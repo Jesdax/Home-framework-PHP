@@ -60,6 +60,17 @@ class TableTest extends TestCase
     }
 
 
+    public function testFindBy()
+    {
+        $this->table->getPdo()->exec('INSERT INTO test (name) VALUES ("a1")');
+        $this->table->getPdo()->exec('INSERT INTO test (name) VALUES ("a2")');
+        $this->table->getPdo()->exec('INSERT INTO test (name) VALUES ("a1")');
+        $category = $this->table->findBy('name', 'a1');
+        $this->assertInstanceOf(\stdClass::class, $category);
+        $this->assertEquals('1', (int)$category->id);
+    }
+
+
     public function testExists()
     {
         $this->table->getPdo()->exec('INSERT INTO test (name) VALUES ("a1")');

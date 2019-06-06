@@ -63,7 +63,7 @@ class PostShowActionTest extends TestCase
             ->withAttribute('slug', 'demo');
 
         $this->router->generateUri('blog.show', ['id' => $post->id, 'slug' => $post->slug])->willReturn('/demo2');
-        $this->postTable->find($post->id)->willReturn($post);
+        $this->postTable->findWithCategory($post->id)->willReturn($post);
 
 
         $response = call_user_func_array($this->action, [$request]);
@@ -80,7 +80,7 @@ class PostShowActionTest extends TestCase
             ->withAttribute('id', $post->id)
             ->withAttribute('slug', $post->slug);
 
-        $this->postTable->find($post->id)->willReturn($post);
+        $this->postTable->findWithCategory($post->id)->willReturn($post);
         $this->renderer->render('@blog/show', ['post' => $post])->willReturn('');
 
         $response = call_user_func_array($this->action, [$request]);

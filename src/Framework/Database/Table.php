@@ -99,32 +99,40 @@ class Table
         return $list;
     }
 
+    /**
+     * @return array
+     */
     public function findAll(): array
     {
-        $statement = $this->pdo->query("SELECT * FROM {$this->table}");
+        $query = $this->pdo->query("SELECT * FROM {$this->table}");
         if ($this->entity) {
-            $statement->setFetchMode(\PDO::FETCH_CLASS, $this->entity);
+            $query->setFetchMode(\PDO::FETCH_CLASS, $this->entity);
         } else {
-            $statement->setFetchMode(\PDO::FETCH_OBJ);
+            $query->setFetchMode(\PDO::FETCH_OBJ);
         }
-        return $statement->fetchAll();
+        return $query->fetchAll();
+    }
+
+
+    /**
+     * @param string $field
+     * @param string $value
+     * @return array
+     * @throws NoRecordException
+     */
+    public function findBy(string $field, string $value)
+    {
+        return $this->fetchOrFail("SELECT * FROM {$this->table} WHERE $field = ?", [$value]);
     }
 
     /**
-     * Get an element from his id
      * @param $id
      * @return mixed
+     * @throws NoRecordException
      */
     public function find($id)
     {
-        $query = $this->pdo
-            ->prepare("SELECT * FROM {$this->table} WHERE id = ?");
-        $query->execute([$id]);
-        if ($this->entity) {
-            $query->setFetchMode(\PDO::FETCH_CLASS, $this->entity);
-        }
-
-        return $query->fetch() ?: null;
+        return $this->fetchOrFail("SELECT * FROM {$this->table} WHERE id = ?", [$id]);
     }
 
     /**
@@ -138,8 +146,8 @@ class Table
 
         $fieldQuery = $this->buildFieldQuery($params);
         $params["id"] = $id;
-        $statement = $this->pdo->prepare("UPDATE {$this->table} SET $fieldQuery WHERE id = :id");
-        return $statement->execute($params);
+        $query = $this->pdo->prepare("UPDATE {$this->table} SET $fieldQuery WHERE id = :id");
+        return $query->execute($params);
     }
 
 
@@ -155,8 +163,8 @@ class Table
             return ':' . $field;
         }, $fields));
         $fields = join(', ', $fields);
-        $statement = $this->pdo->prepare("INSERT INTO {$this->table} ($fields) VALUES ($values)");
-        return $statement->execute($params);
+        $query = $this->pdo->prepare("INSERT INTO {$this->table} ($fields) VALUES ($values)");
+        return $query->execute($params);
     }
 
     /**
@@ -166,8 +174,8 @@ class Table
      */
     public function delete(int $id): bool
     {
-        $statement = $this->pdo->prepare("DELETE FROM {$this->table} WHERE id = ?");
-        return $statement->execute([$id]);
+        $query = $this->pdo->prepare("DELETE FROM {$this->table} WHERE id = ?");
+        return $query->execute([$id]);
     }
 
     /**
@@ -177,15 +185,40 @@ class Table
      */
     public function exists($id)
     {
-        $statement = $this->pdo->prepare("SELECT id FROM {$this->table} WHERE id = ?");
-        $statement->execute([$id]);
-        return $statement->fetchColumn() !== false;
+        $query = $this->pdo->prepare("SELECT id FROM {$this->table} WHERE id = ?");
+        $query->execute([$id]);
+        return $query->fetchColumn() !== false;
     }
+
+
+
 
     private function buildFieldQuery(array $params)
     {
         return join(', ', array_map(function ($field) {
             return "$field = :$field";
         }, array_keys($params)));
+    }
+
+    /**
+     * Execut request and recup first results
+     * @param $query
+     * @param array $params
+     * @return mixed
+     * @throws NoRecordException
+     */
+    protected function fetchOrFail($query, $params = [])
+    {
+        $query = $this->pdo->prepare($query);
+        $query->execute($params);
+        if ($this->entity) {
+            $query->setFetchMode(\PDO::FETCH_CLASS, $this->entity);
+        }
+
+        $record = $query->fetch();
+        if ($record === false) {
+            throw new NoRecordException();
+        }
+        return $record;
     }
 }
