@@ -9,7 +9,14 @@ class TwigRenderer implements RendererInterface
 
     private $twig;
 
-    private $loader;
+    /**
+     * @return Environment
+     */
+    public function getTwig(): Environment
+    {
+        return $this->twig;
+    }
+
 
     public function __construct(Environment $twig)
     {

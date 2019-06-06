@@ -4,7 +4,6 @@ namespace Framework\Router;
 
 
 use Framework\Router;
-use phpDocumentor\Reflection\Types\String_;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
@@ -22,7 +21,8 @@ class RouterTwigExtension extends AbstractExtension
     public function getFunctions()
     {
         return [
-            new TwigFunction('path', [$this, 'pathFor'])
+            new TwigFunction('path', [$this, 'pathFor']),
+            new TwigFunction('is_subpath', [$this, 'isSubPath'])
         ];
     }
 
@@ -30,5 +30,12 @@ class RouterTwigExtension extends AbstractExtension
     public function pathFor($path, array $params = [])
     {
         return $this->router->generateUri($path, $params);
+    }
+
+    public function isSubPath(string $path): bool
+    {
+        $uri = $_SERVER['REQUEST_URI'] ?? '/';
+        $expectedUri = $this->router->generateUri($path);
+        return strpos($uri, $expectedUri) !== false;
     }
 }

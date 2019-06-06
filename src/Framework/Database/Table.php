@@ -135,6 +135,17 @@ class Table
         return $this->fetchOrFail("SELECT * FROM {$this->table} WHERE id = ?", [$id]);
     }
 
+
+    /**
+     * Retrieve nb registration
+     * @return int
+     */
+    public function count(): int
+    {
+        return $this->fetchColumn("SELECT COUNT(id) FROM {$this->table}");
+    }
+
+
     /**
      * Updates a record at the database level
      * @param int $id
@@ -220,5 +231,23 @@ class Table
             throw new NoRecordException();
         }
         return $record;
+    }
+
+
+    /**
+     * Retrieve first column
+     * @param string $query
+     * @param array $params
+     * @return mixed
+     */
+    private function fetchColumn(string $query, array $params = [])
+    {
+        $query = $this->pdo->prepare($query);
+        $query->execute($params);
+        if ($this->entity) {
+            $query->setFetchMode(\PDO::FETCH_CLASS, $this->entity);
+        }
+
+        return $query->fetchColumn();
     }
 }
